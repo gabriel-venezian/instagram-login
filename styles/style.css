@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 1.4rem;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: center;
+}
+
+.ig-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.ig-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.ig-phone img {
+  height: 70rem;
+}
+
+.ig-continue {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  min-height: 54.4rem;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 2.08rem 0;
+  border: 1px solid lightgray;
+}
+
+.group p + p {
+  margin-top: 0.5rem;
+}
+
+.group:nth-child(1) {
+  min-height: 30.4rem;
+}
+
+.ig-logo {
+  height: 4.8rem;
+}
+
+.ig-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ig-profile img {
+  height: 9.6rem;
+}
+
+.ig-login {
+  background-color: #0095f6;
+  color: #ffffff;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+}
+
+.ig-logout {
+  color: #0095f6;
+}
+
+.not-account {
+  color: rgb(160, 160, 160);
+}
+
+.ig-link {
+  color: #0095f6;
+}
+
+.get-the-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2.08rem 0;
+}
+
+.download {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.app-download {
+  height: 4.8rem;
+  width: 16rem;
+  background-size: cover;
+}
+
+.app-download:nth-child(1) {
+  background-image: url("../images/download-apple.png");
+}
+
+.app-download:nth-child(2) {
+  background-image: url("../images/download-google.png");
+}
+
+@media (max-width: 1024px) {
+  .ig-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: #ffffff;
+  }
+
+  .ig-phone {
+    display: none;
+  }
+
+  .ig-continue {
+    width: 100%;
+  }
+
+  .group {
+    border: 1px solid transparent;
+  }
+}
